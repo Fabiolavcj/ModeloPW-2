@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+/*--------------------------------------------------Estilos del Header--------------------------------------------------*/
+header {
+    height: 60px;
+}
+
+header .contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-pulgar-arriba, .icon-menu {
+    margin: 5px;
+    color: #fff;
+}
+
+.icon-menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #23c12f;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+}
+/*---------------------------------------------------Estilos del Menu---------------------------------------------------*/
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    transition: all 0.4s;
+}
+
+.menu, .submenu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu-link {
+    display: block;
+    padding: 10px;
+    background: #23c12f;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px
+}
+
+.submenuu {
+    border-bottom: none;
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.submenu span {
+    position: absolute;
+    right: 5px;
+}
+
+.submenu ul li {
+    list-style: none;
+}
+
+/*Etiqueta div temporal para Java Script*/
+.mySubmenuu {
+    display: none;
+}
+/*Etiqueta div temporal para Java Script*/
+.submenu ul a {
+    display: block;
+    padding: 5px;
+    background: rgba(33, 208, 47, 0.83);
+    font-size: 15px;
+    margin: 0;
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 0.4s;
+}
+
+.menu-link:hover, .select {
+    background: white;
+    color:#23c12f;
+}
+
+.submenu ul a:hover {
+    background: rgba(135, 242, 116, 0.39);
+    color: #23c12f;
+}
+
+.mostrar {
+    left: 0;
+}
+/*Etiqueta show temporal para ver si funciona en Java Script*/
+.show {
+    display:block;
+}
+/*Etiqueta show temporal para ver si funciona en Java Script*/
+
+/*------------------------------------------------Estilos del Contenido------------------------------------------------*/
+
+.contenido {
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 30px;
+}
+
+.contenido .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    transform: translateX(-50%)translateY(-50%);
+    
+}
+
+.contenido-txt {
+    display: none;
+}
+
+/*----------------------------------------------Estilos de la Información----------------------------------------------*/
+
+.info-columna {
+    background: #23c12f;
+    color: #fff;
+    text-align: justify;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.info--img {
+    height: 300px;
+    width: 100%;
+}
+
+.info-titulo {
+    margin: 10px;   
+    text-align: center;
+}
+
+/*---------------------------------------------------Estilos QOfrecer---------------------------------------------------*/
+
+.qofrecer-columna {
+    background: #000000;
+    color: #fff;
+    text-align: justify;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.qofrecer-boton {
+    background: #23c12f;
+    border-bottom: none;
+    border: none;
+    border-radius: 100%;
+    font-size: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.qofrecer-columna button a {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.qofrecer-titulo {
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.section-titulo {
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.qofrecer-boton:hover {
+    background:#0b460f;
+    border-bottom-color: #fff;
+}
+
+/*----------------------------------------------Estilos del Footer----------------------------------------------*/
+
+.footer {
+    background: #000000;
+    color: #ffff;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer .rsociales [class^="icon-"] {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #ffff;
+    width: 60px;
+    height: 60px;
+    line-height: 40px;
+    text-align: center;
+}
